@@ -5,7 +5,7 @@ FROM php:8.2-apache
 RUN a2enmod rewrite
 
 # Copiar el código fuente de la carpeta src al directorio público del servidor
-COPY src/ /var/www/html/
+COPY . /var/www/html/
 
 # Exponer el puerto 80 para acceder al contenedor
 EXPOSE 80
